@@ -1,12 +1,14 @@
-<script type= "text/javascript">
+
+<script>
 function init(){
-//add your javascrip between these two lines of code
-alert('Hello Kim');	
+alert(input.value);
 }
- 	
+
 var button = document.getElementById ('entrybutton');
+
+
 button.addEventListener ('click', init);
 
 
-//window.addEventListener('load', init);
+window.addEventListener('load', init);
 </script>
