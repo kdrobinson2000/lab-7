@@ -1,13 +1,23 @@
-function init() {
-  alert(input.value);
-  output.innerHTML = input.value;
-  
-  
-}
+function init(){
 
-var button = document.getElementById ('entrybutton');
-var input=document.getElementById ('entryinput');
-var output=document.getElementById ('textoutput');
+ var button = document.getElementById('entrybutton');
 
-button.addEventListener ('click', init);
+
+ function showMeText(){
+
+  var textbox = document.getElementById('entryinput');
+
+  document.getElementById('textoutput').innerHTML = textbox.value;
+
+  alert("Kimberly: " + textbox.value);
+
+ }
+
+
+ button.addEventListener('click', showMeText);
+
+ }
+
+  
+
 window.addEventListener('load', init);
